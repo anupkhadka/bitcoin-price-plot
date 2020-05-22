@@ -11,7 +11,7 @@ price_list = []
 today = date.today()
 today = today.strftime("%Y-%m-%d")
 
-# pull in json data of bitcoin price from Jan 1, 2017 to Dec 31, 2017 from api.coindesk.com
+# pull in json data of bitcoin price from Jan 1, 2020 to today from api.coindesk.com
 url = f'https://api.coindesk.com/v1/bpi/historical/close.json?start=2020-01-01&end={today}' 
 response = requests.get(url)
 data = response.json()
